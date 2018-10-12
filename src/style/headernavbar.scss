@@ -1,9 +1,15 @@
 .header {
+    grid-row: header-s/header-e;
+    grid-column: s/e;
+    
     display: grid;
     justify-content: center;
 }
 
 .navbar {
+    grid-row: navbar-s/navbar-e;
+    grid-column: s/e;
+
     background-color: $color-gray-one;
     box-shadow: 0 .2rem .6rem rgba(0,0,0,0.2);
 }
