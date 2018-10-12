@@ -1,0 +1,12 @@
+@import "variables", "mixins", "layout", "headernavbar";
+
+html {
+    font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+}

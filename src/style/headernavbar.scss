@@ -1,0 +1,9 @@
+.header {
+    display: grid;
+    justify-content: center;
+}
+
+.navbar {
+    background-color: $color-gray-one;
+    box-shadow: 0 .2rem .6rem rgba(0,0,0,0.2);
+}
