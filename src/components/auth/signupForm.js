@@ -8,21 +8,18 @@ import history from '../../history';
 class SignupForm extends Component {
   render() {
     const { className, handleSubmit } = this.props;
-    const links = [
+    const info = [
       {
         _id: 0,
-        title: 'Already have an account? Login',
-        onClick: () => history.push('/signin')
+        title: 'At least six characters'
       },
       {
         _id: 1,
-        title: 'Forgot account email?',
-        onClick: () => console.log('forgot email')
+        title: 'At least one number'
       },
       {
         _id: 2,
-        title: 'Forgot password?',
-        onClick: () => console.log('forgot password')
+        title: 'at least one symbol'
       },
     ]
     return (
@@ -52,7 +49,7 @@ class SignupForm extends Component {
           component={FormInput}
         />
         <Field
-          className="sign-up-form__confirm-password"
+          className="sign-up-form__confirm"
           type="password"
           title="Confirm Password"
           placeholder="Confirm Password"
@@ -61,23 +58,23 @@ class SignupForm extends Component {
         />
         <div className="sign-up-form__line"></div>
         <Field
-          className="sign-up-form__login"
-          onClick={() => console.log('trying to submit')}
+          className="sign-up-form__create"
+          onClick={() => history.push('/account')}
           type="submit"
-          title="Login"
-          name="login"
+          title="Create Account"
+          name="create"
           component={FormButton}
         />
         <Field
           className="sign-up-form__back"
-          onClick={() => console.log('trying to back')}
+          onClick={() => history.push('/signin')}
           type="button"
           title="Back"
           name="back"
           short={true}
           component={FormButton}
         />
-        <Details className="sign-up-form__details" title="Quick Links" links={links}/>
+        <Details className="sign-up-form__details" title="Password Requirements" info={info}/>
       </form>
     );
   }
