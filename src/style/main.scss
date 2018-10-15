@@ -1,5 +1,6 @@
 @import "variables", "mixins", "layout", "headernavbar";
 @import 'auth/signin', 'auth/signup';
+@import "page-title";
 
 html {
     font-size: 62.5%;
