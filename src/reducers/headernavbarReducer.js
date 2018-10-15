@@ -4,11 +4,25 @@ import {
 } from '../actions/types';
 
 const INITIAL_STATE = {
-    headerLinks: [],
-    navbarLinks: []
+    headerLinks: [
+        {
+            title: 'account'
+        },
+        {
+            title: 'purchase'
+        }
+    ],
+    navbarLinks: [
+        {
+            title: 'account'
+        },
+        {
+            title: 'purchase'
+        }
+    ]
 }
 
-export default function HeaderNavbar(state = INITIAL_STATE, action) {
+export default function(state = INITIAL_STATE, action) {
     switch (action.type) {
         case SET_HEADER_LINKS:
             return {
