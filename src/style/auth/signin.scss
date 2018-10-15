@@ -2,14 +2,34 @@
     grid-row: content-s/content-e;
     grid-column: content-s/content-e;
 
+    &__page-title {
+
+    }
+
     &__form {
-        
+        display: grid;
+        grid-template-rows: [email-s] 6.4rem [email-e password-s] 6.4rem [password-e] minmax(2rem, 28.9rem) [line-s] .2rem [line-e login-s] 3.8rem [login-e];
     }
 
 }
 
 .sign-in-form {
+    &__email {
+        grid-row: email-s/email-e;
+    }
+
+    &__password {
+        grid-row: password-s/password-e;
+        margin: 1.5rem 0 0 0;
+    }
+
     &__line {
+        grid-row: line-s/line-e;
         border-top: .1rem solid $color-gray-five;
+    }
+
+    &__login {
+        grid-row: login-s/login-e;
+        margin: 3.9rem 0 0 0;
     }
 }
