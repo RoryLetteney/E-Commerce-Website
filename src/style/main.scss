@@ -1,6 +1,7 @@
 @import "variables", "mixins", "layout", "headernavbar";
 @import 'auth/signin', 'auth/signup';
 @import "page-title", "form-fields", "details";
+@import "account/account.scss", "account/purchase-history", "account/account-information.scss";
 
 html {
     font-size: 62.5%;
