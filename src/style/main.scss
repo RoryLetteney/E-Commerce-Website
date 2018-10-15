@@ -1,9 +1,11 @@
 @import "variables", "mixins", "layout", "headernavbar";
 @import 'auth/signin', 'auth/signup';
-@import "page-title";
+@import "page-title", "form-fields";
 
 html {
     font-size: 62.5%;
+    font-family: $font-two;
+    color: $color-gray-four;
 }
 
 *,

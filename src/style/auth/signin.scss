@@ -9,5 +9,7 @@
 }
 
 .sign-in-form {
-
+    &__line {
+        border-top: .1rem solid $color-gray-five;
+    }
 }
