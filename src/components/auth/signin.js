@@ -6,7 +6,7 @@ import PageTitle from '../pageTitle';
 class Signin extends Component {
 
     onSubmit = (fields) => {
-        console.log(fields)
+        
     }
 
    render() {
