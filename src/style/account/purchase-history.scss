@@ -1,6 +1,26 @@
 .purchase-history {
-
+    display: grid;
     &__page-title {
+        border-bottom: .1rem solid $color-gray-five;
+    }
+
+    &__purchases {
+        
+    }
+
+    &__details {
 
     }
+
+    &__bottom-border {
+        border-bottom: .1rem solid $color-gray-seven;
+    }
+}
+
+.purchases {
+
+}
+
+.purchase-detail {
+
 }
