@@ -1,5 +1,11 @@
 .purchase-history {
-    display: grid;
+    &__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        margin: 3.7rem 0;
+    }
+
     &__page-title {
         border-bottom: .1rem solid $color-gray-five;
     }
@@ -18,7 +24,10 @@
 }
 
 .purchases {
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 8rem);
+    width: 36rem;
+    grid-gap: 1rem;
 }
 
 .purchase-detail {
