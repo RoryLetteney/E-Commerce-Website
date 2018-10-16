@@ -18,7 +18,7 @@ class PurchaseDetail extends Component {
       <div className={`${className} purchase-detail`}>
         <PurchaseDetailLabel className="purchase-detail__order-number" title="Order Number" value={orderNumber}/>
         <PurchaseDetailLabel className="purchase-detail__order-date" title="Order Date" value={orderDate}/>
-        <PurchaseDetailLabel className="purchase-detail__shipping-address" title="Shipping Address" value={`${name} \n ${shippingAddress}`}/>
+        <PurchaseDetailLabel className="purchase-detail__shipping-address" title="Shipping Address" value={`${name}\n${shippingAddress}`}/>
         <PurchaseDetailLabel className="purchase-detail__total" title="Total" value={total}/>
         <PurchaseDetailLabel className="purchase-detail__credit-card" title="Credit Card" value={creditCard}/>
         <a className="purchase-detail__track-shipment">Track Shipment</a>
