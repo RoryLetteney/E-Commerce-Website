@@ -21,7 +21,8 @@
     }
 }
 
-.form-button {
+.form-button {    
+
     &__button {
         height: 3.8rem;
         width: 24.3rem;
@@ -38,5 +39,28 @@
     &__gray-button {
         background: $color-gray-six;
         width: 13.7rem;
+    }
+}
+
+.form-button-long-gray {
+    display: grid;
+    grid-gap: .65rem;
+
+    &__label {
+        font-size: 1.4rem;
+        padding-left: 2rem;
+    }
+
+    &__button {
+        height: 3.8rem;
+        width: 24.3rem;
+        border-radius: 2rem;
+        background-color: $color-gray-six;
+        font-size: 1.6rem;
+        color: white;
+
+        &:focus {
+            outline: none;
+        }
     }
 }
