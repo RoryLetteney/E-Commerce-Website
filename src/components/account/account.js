@@ -18,7 +18,7 @@ class Account extends Component {
             _id: 1,
             title: "Logout",
             path: '/'
-        },
+        }
     ]
 
     const navbarLinks = [
