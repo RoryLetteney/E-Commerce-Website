@@ -8,7 +8,7 @@
 
     &__form {
         display: grid;
-        grid-template-rows: [name-s street-address-s] 6.4rem [name-e street-address-e email-s city-s] 6.4rem [email-e city-e state-s zipcode-s] 6.4rem [state-e zipcode-e change-password-s current-s] 6.4rem [change-password-e current-e new-s] 6.4rem [new-e confirm-s] 6.4rem [confirm-e];
+        grid-template-rows: [name-s street-address-s] 6.4rem [name-e street-address-e email-s city-s] 6.4rem [email-e city-e state-s zipcode-s] 6.4rem [state-e zipcode-e change-password-s current-s] 6.4rem [change-password-e current-e new-s] 6.4rem [new-e confirm-s] 6.4rem [confirm-e] minmax(2rem, 8.1rem) [line-s] 2.6rem [line-e buttons-s] 3.8rem [buttons-e];
         grid-template-columns: [s] 1fr [m] 1fr [e];
         grid-row-gap: 1.5rem;
     }
@@ -90,5 +90,25 @@
     &__confirm {
         grid-column: s/m;
         transform: translateY(-2.5rem);
+    }
+
+    &__line {
+        grid-column: s/e;
+        grid-row: line-s/line-e;
+        border-top: .1rem solid $color-gray-five;
+    }
+
+    &__cancel {
+        
+    }
+
+    &__update-information {
+        transform: translateX(15rem);
+    }
+
+    &__cancel,
+    &__update-information {
+        grid-row: buttons-s/buttons-e;
+        grid-column: s/m;
     }
 }

@@ -67,11 +67,12 @@ class AccountInformationForm extends Component {
           name="zipcode"
           component={FormInput}
         />
+        <div className="account-information-form__line"></div>
         {
             this.state.showPasswords ? 
             [
                 <Field
-                    key={1}
+                    key={0}
                     className="account-information-form__current"
                     type="password"
                     title="Current Password"
@@ -80,7 +81,7 @@ class AccountInformationForm extends Component {
                     component={FormInput}
                 />,
                 <Field
-                    key={2}
+                    key={1}
                     className="account-information-form__new"
                     type="password"
                     title="New Password"
@@ -89,13 +90,32 @@ class AccountInformationForm extends Component {
                     component={FormInput}
                 />,
                 <Field
-                    key={3}
+                    key={2}
                     className="account-information-form__confirm"
                     type="password"
                     title="Confirm Password"
                     placeholder="Confirm Password"
                     name="confirm"
                     component={FormInput}
+                />,
+                <Field
+                key={3}
+                    className="account-information-form__update-information"
+                    onClick={() => this.setState({ showPasswords: false })}
+                    type="submit"
+                    title="Update Information"
+                    name="update-information"
+                    component={FormButton}
+                />,
+                <Field
+                key={4}
+                    className="account-information-form__cancel"
+                    onClick={() => this.setState({ showPasswords: false })}
+                    type="button"
+                    title="Cancel"
+                    name="cancel"
+                    short={true}
+                    component={FormButton}
                 />
             ]
             :
