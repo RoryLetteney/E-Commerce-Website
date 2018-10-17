@@ -1,0 +1,43 @@
+.shop-product {
+    height: 31.4rem;
+    width: 24rem;
+    background-color: white;
+    box-shadow: 0 .2rem 2rem 0 rgba(0,0,0,0.1);
+
+    &__title {
+        color: $color-green-one;
+        font-family: $font-three;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        color: $color-gray-one;
+    }
+
+    &__add-to-cart {
+        display: grid;
+        align-content: center;
+        justify-content: center;
+
+        height: 4rem;
+        width: 9.7rem;
+        border-radius: 2rem;
+        color: white;
+        background-color: $color-green-one;
+        font-weight: 600;
+        font-size: 1.2rem;
+        transition: all .1s ease;
+        cursor: default;
+        
+        &:hover {
+            transform: scale(0.97);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+    }
+
+}
