@@ -43,5 +43,18 @@
 }
 
 .cart-content {
+    &__title {
+        font-weight: 600;
+        font-size: 3rem;
+        font-family: $font-one;
+        color: $color-gray-three;
+    }
 
+    &__products {
+        display: grid;
+    }
+
+    &__footer {
+        display: grid;
+    }
 }
