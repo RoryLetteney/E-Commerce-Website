@@ -1,13 +1,42 @@
 .quantity {
-    &__count {
 
+    display: grid;
+    grid-template-rows: [s] 2.1rem [m] 2.1rem [e];
+    grid-template-columns: [s] 6.5rem [m] 2.9rem [e];
+
+    &__count,
+    &__plus,
+    &__minus {
+        grid-column: m/e;
+
+        display: grid;
+        justify-content: center;
+        align-content: center;
+        
+        border: .1rem solid $color-gray-three;
+        height: 2.1rem;
+        width: 2.9rem;
+    }
+
+    &__count {
+        grid-row: s/e;
+        grid-column: s/m;
+        height: 4.2rem;
+        width: 6.5rem;
+        border-radius: .3rem 0 0 .3rem;
+        font-size: 2.3rem;
+        color: $color-gray-one;
+        border-right: none;
     }
 
     &__plus {
-
+        grid-row: s/m;
+        border-radius: 0 .3rem 0 0;
+        border-bottom: none;
     }
 
     &__minus {
-        
+        grid-row: m/e;
+        border-radius: 0 0 .3rem 0;
     }
 }
