@@ -2,7 +2,7 @@
 @import 'auth/signin', 'auth/signup';
 @import "page-title", "form-fields", "details";
 @import "account/account.scss", "account/purchase-history", "account/account-information.scss";
-@import "shop/shop";
+@import "shop/shop", "shop/shop-search-bar";
 
 html {
     font-size: 62.5%;
