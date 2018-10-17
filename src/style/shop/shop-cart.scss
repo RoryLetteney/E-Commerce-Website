@@ -58,3 +58,34 @@
         display: grid;
     }
 }
+
+.cart-footer {
+    &__checkout {
+        display: grid;
+        justify-content: center;
+        align-content: center;
+
+        height: 3.8rem;
+        width: 18.3rem;
+        border-radius: 2rem;
+        background-color: $color-green-one;
+        color: white;
+        font-family: $font-two;
+        font-size: 1.6rem;
+        font-weight: 600;
+
+        transition: all .1s ease;
+
+        &:hover {
+            transform: scale(0.97);
+        }
+
+        &:active {
+            transform: scale(0.95);
+        }
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
