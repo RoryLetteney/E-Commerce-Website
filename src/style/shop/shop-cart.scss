@@ -43,7 +43,14 @@
 }
 
 .cart-content {
+    display: grid;
+    grid-template-rows: 2.5rem [title-s] 8rem [title-e products-s] 1fr [products-e footer-s] 11.3rem [footer-e];
+    grid-template-columns: [footer-s] 3rem [s] 1fr [e] 3rem [footer-e];
+
     &__title {
+        grid-row: title-s/title-e;
+        grid-column: s/e;
+
         font-weight: 600;
         font-size: 3rem;
         font-family: $font-one;
@@ -51,10 +58,16 @@
     }
 
     &__products {
+        grid-row: products-s/products-e;
+        grid-column: s/e;
+
         display: grid;
     }
 
     &__footer {
+        grid-row: footer-s/footer-e;
+        grid-column: footer-s/footer-e;
+
         display: grid;
     }
 }
