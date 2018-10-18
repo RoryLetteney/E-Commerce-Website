@@ -4,14 +4,12 @@
     grid-template-columns: [s] 1fr [e];
     grid-row-gap: 1.5rem;
 
+    transition: all .3s ease;
+
     &__toggle {
         grid-row: toggle-s/toggle-e;
         grid-column: s/e;
         justify-self: end;
-
-        display: grid;
-        justify-content: center;
-        align-content: center;  
     }
 
     &__content {
@@ -34,6 +32,10 @@
 }
 
 .cart-button {
+    display: grid;
+    justify-content: center;
+    align-content: center;  
+
     background-color: $color-gray-one;
     color: white;
     font-size: 2.8rem;
@@ -105,7 +107,7 @@
         font-size: 1.6rem;
         font-weight: 600;
 
-        transition: all .1s ease;
+        transition: all .3s ease;
 
         &:hover {
             transform: scale(0.97);
@@ -137,4 +139,8 @@
         color: white;
         font-weight: 600;
     }
+}
+
+.cart-hidden {
+    transform: translateX(100%);
 }

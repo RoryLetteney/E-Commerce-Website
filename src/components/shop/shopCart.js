@@ -3,13 +3,13 @@ import { connect } from 'react-redux';
 import * as actions from '../../actions';
 
 import ShopCartProduct from '../shop/shopCartProduct';
+import CartButton from './cartButton';
 
-function CartButton({className, icon}) {
-    return (
-        <div className={`${className} cart-button`}>
-            <i className={icon}/>
-        </div>
-    )
+function closeCart() {
+    const shopCartClasses = document.getElementById('shop-cart').classList;
+    const cartButtonClasses = document.getElementById('cart-button').classList;
+    shopCartClasses.add('cart-hidden')
+    cartButtonClasses.remove('cart-hidden');
 }
 
 function CartContent({className, products}) {
@@ -54,8 +54,8 @@ class ShopCart extends Component {
   render() {
     const { className } = this.props;
     return (
-        <div className={`${className} shop-cart`}>
-            <CartButton className="shop-cart__toggle" icon="fas fa-times"/>
+        <div id="shop-cart" className={`${className} shop-cart cart-hidden`}>
+            <CartButton className="shop-cart__toggle" icon="fas fa-times" onClick={closeCart}/>
             <CartContent className="shop-cart__content" products={this.props.cartProducts}/>
         </div>
     )
