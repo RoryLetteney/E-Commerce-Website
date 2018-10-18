@@ -5,11 +5,18 @@
 @import "shop/shop", "shop/shop-search-bar", "shop/shop-product";
 @import "quantity", "green-price-tag";
 @import "shop/shop-cart", "shop/shop-cart-product";
+@import "order/review";
 
 html {
     font-size: 62.5%;
     font-family: $font-two;
     color: $color-gray-four;
+    cursor: default;
+
+    a,
+    button {
+        cursor: pointer;
+    }
 }
 
 *,
