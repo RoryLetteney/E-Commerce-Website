@@ -4,7 +4,7 @@
 @import "account/account.scss", "account/purchase-history", "account/account-information.scss";
 @import "shop/shop", "shop/shop-search-bar", "shop/shop-product";
 @import "quantity", "green-price-tag";
-@import "shop/shop-cart";
+@import "shop/shop-cart", "shop/shop-cart-product";
 
 html {
     font-size: 62.5%;
