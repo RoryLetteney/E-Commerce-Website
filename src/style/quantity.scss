@@ -16,6 +16,7 @@
         border: .1rem solid $color-gray-three;
         height: 2.1rem;
         width: 2.9rem;
+        cursor: pointer;
     }
 
     &__count {
@@ -27,6 +28,7 @@
         font-size: 2.3rem;
         color: $color-gray-one;
         border-right: none;
+        cursor: default;
     }
 
     &__plus {

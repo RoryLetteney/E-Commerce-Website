@@ -15,6 +15,10 @@
         grid-row: s/m;
         grid-column: title-s/title-e;
         align-self: start;
+
+        font-family: $font-three;
+        font-size: 1.8rem;
+        color: $color-gray-three;
     }
 
     &__quantity {
@@ -22,7 +26,7 @@
         grid-column: quantity-s/quantity-e;
         align-self: end;
         transform: translateY(-.2rem);
-        
+
         .quantity__count {
             color: white;
         }
@@ -32,6 +36,10 @@
         grid-row: m/e;
         grid-column: remove-s/remove-e;
         justify-self: start;
+
+        font-size: 1.4rem;
+        text-decoration: underline;
+        cursor: pointer;
     }
 
     &__price {
