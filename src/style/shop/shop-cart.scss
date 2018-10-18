@@ -44,7 +44,7 @@
 
 .cart-content {
     display: grid;
-    grid-template-rows: 2.5rem [title-s] 8rem [title-e products-s] 1fr [products-e footer-s] 11.3rem [footer-e];
+    grid-template-rows: 2.5rem [title-s] 5rem [title-e products-s] 1fr [products-e footer-s] 11.3rem [footer-e];
     grid-template-columns: [footer-s] 3rem [s] 1fr [e] 3rem [footer-e];
 
     &__title {
@@ -62,6 +62,9 @@
         grid-column: s/e;
 
         display: grid;
+
+        overflow-y: scroll;
+        padding-top: 2rem;
     }
 
     &__footer {
