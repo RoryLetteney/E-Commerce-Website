@@ -1,6 +1,5 @@
 import {
     SET_SHOP_CATEGORIES,
-    SET_NAVBAR_LINKS,
     SET_SHOP_PRODUCTS,
     FILTER_PRODUCTS_WITH_CATEGORY_ID,
     FILTER_PRODUCTS_WITH_QUERY
@@ -73,7 +72,8 @@ export function fetchShopProducts() {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageURL: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 1,
@@ -81,7 +81,8 @@ export function fetchShopProducts() {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageURL: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 2,
@@ -89,7 +90,8 @@ export function fetchShopProducts() {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
-                belongsTo: [0, 1, 4]
+                belongsTo: [0, 1, 4],
+                imageURL: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 3,
@@ -97,7 +99,8 @@ export function fetchShopProducts() {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageURL: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 4,
@@ -105,7 +108,8 @@ export function fetchShopProducts() {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
-                belongsTo: [0, 1]
+                belongsTo: [0, 1],
+                imageURL: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 5,
@@ -113,7 +117,8 @@ export function fetchShopProducts() {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
-                belongsTo: [0, 2]
+                belongsTo: [0, 2],
+                imageURL: 'http://via.placeholder.com/80x80'
             },
             {
                 _id: 6,
@@ -121,7 +126,8 @@ export function fetchShopProducts() {
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
-                belongsTo: [0, 6]
+                belongsTo: [0, 6],
+                imageURL: 'http://via.placeholder.com/80x80'
             }
         ]
     })
