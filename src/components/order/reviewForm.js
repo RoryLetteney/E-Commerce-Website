@@ -1,28 +1,16 @@
 import React, { Component } from "react";
 import { reduxForm, Field } from "redux-form";
+import history from '../../history';
 
 import { FormButton } from "../formFields";
-import history from '../../history';
+import ReviewProducts from './reviewProducts';
 
 class ReviewForm extends Component {
   render() {
     const { className, handleSubmit } = this.props;
-    const info = [
-      {
-        _id: 0,
-        title: 'At least six characters'
-      },
-      {
-        _id: 1,
-        title: 'At least one number'
-      },
-      {
-        _id: 2,
-        title: 'at least one symbol'
-      },
-    ]
     return (
       <form onSubmit={handleSubmit} className={`${className} review-form`}>
+        <ReviewProducts className="review-form__products"/>
         <div className="review-form__line"></div>
         <Field
           className="review-form__proceed"

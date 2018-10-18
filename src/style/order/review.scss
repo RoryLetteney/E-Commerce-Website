@@ -4,7 +4,7 @@
     
     &__form {
         display: grid;
-        grid-template-rows: [line-s] 2.6rem [line-e buttons-s] 3.8rem [buttons-e];
+        grid-template-rows: [products-s] 40rem [products-e line-s] 2.6rem [line-e buttons-s] 3.8rem [buttons-e];
         grid-template-columns: [back-s] 13.7rem [back-e space-s] 4rem [space-e proceed-s] 1fr [proceed-e] 1fr;
         grid-row-gap: 1.5rem;
     }
