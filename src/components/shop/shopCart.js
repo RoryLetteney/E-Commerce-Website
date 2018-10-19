@@ -43,7 +43,7 @@ function CartFooter({className, products}) {
                 Subtotal
             </div>
             <div className="cart-footer__price">
-                ${subtotal}
+                ${subtotal.toFixed(2)}
             </div>
         </div>
     )

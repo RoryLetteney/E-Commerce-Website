@@ -56,4 +56,10 @@
 
         margin-top: 2.4rem;
     }
+
+    &__order-summary {
+        grid-row: name-s;
+        grid-column: use-this-address-e/-1;
+        justify-self: end;
+    }
 }
