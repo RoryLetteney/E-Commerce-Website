@@ -68,7 +68,7 @@ export function fetchShopProducts() {
         payload: [
             {
                 _id: 0,
-                title: 'JavaScript in the Browser',
+                title: 'JavaScript in the',
                 description: 'Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.',
                 price: 1.99,
                 quantity: 1,
