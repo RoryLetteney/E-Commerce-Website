@@ -1,4 +1,11 @@
 .review-form {
+    &__legend {
+        grid-row: legend-s/legend-e;
+        grid-column: 1/-1;
+        font-size: 1.4rem;
+        border-bottom: .1rem solid $color-gray-five;
+        padding-bottom: 1.1rem;
+    }
 
     &__products {
         grid-column: 1/-1;
@@ -10,6 +17,7 @@
         grid-row-gap: 1.2rem;
 
         overflow-y: scroll;
+        height: 100%;
 
         &::-webkit-scrollbar {
             width: 1rem;
