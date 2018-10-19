@@ -13,7 +13,7 @@ class Signup extends Component {
     }
     
     onSubmit = (fields) => {
-        
+        this.props.history.push('/account');
     }
 
    render() {
