@@ -1,41 +1,59 @@
 .shipping {
+    grid-row: content-s/content-e;
+    grid-column: content-s/content-e;
 
     &__form {
-
+        display: grid;
+        grid-template-rows: [name-s] 6.4rem [name-e] 3.5rem [address-s] 6.4rem [address-e city-s] 6.4rem [city-e state-zip-s] 6.4rem [state-zip-e] minmax(2rem, 8.1rem) [line-s] .2rem [line-e buttons-s] 3.8rem [buttons-e];
+        grid-template-columns: [back-s] 13.7rem [back-e space-s] 4rem [space-e use-this-address-s] 1fr [use-this-address-e] 1fr;
+        grid-row-gap: 1.5rem;
     }
 }
 
 .shipping-form {
-
     &__name {
-
+        grid-row: name-s/name-e;
     }
 
     &__address {
-
+        grid-row: address-s/address-e;
     }
 
     &__city {
-
+        grid-row: city-s/city-e;
     }
 
-    &__state {
-
+    &__state,
+    &__zipcode {
+        grid-row: state-zip-s/state-zip-e;
+        grid-column: back-s;
+        input {
+            width: 20rem;
+        }
     }
 
     &__zipcode {
-
+        transform: translateX(22.6rem);
     }
 
     &__line {
+        grid-row: line-s/line-e;
+        grid-column: 1/-1;
 
+        border-top: .1rem solid $color-gray-five;
     }
 
     &__use-this-address {
+        grid-row: buttons-s/buttons-e;
+        grid-column: use-this-address-s/use-this-address-e;
 
+        margin-top: 2.4rem;
     }
 
     &__back {
-        
+        grid-row: buttons-s/buttons-e;
+        grid-column: back-s/back-e;
+
+        margin-top: 2.4rem;
     }
 }

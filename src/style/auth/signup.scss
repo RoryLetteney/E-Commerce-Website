@@ -2,10 +2,6 @@
     grid-row: content-s/content-e;
     grid-column: content-s/content-e;
 
-    &__page-title {
-
-    }
-
     &__form {
         display: grid;
         grid-template-rows: [name-s] 6.4rem [name-e email-s] 6.4rem [email-e space-s] 3.5rem [space-e password-s] 6.4rem [password-e confirm-s] 6.4rem [confirm-e] minmax(2rem, 8.1rem) [line-s] .2rem [line-e buttons-s] 3.8rem [buttons-e];
