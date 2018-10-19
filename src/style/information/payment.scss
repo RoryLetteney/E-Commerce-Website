@@ -1,0 +1,61 @@
+.payment {
+    grid-row: content-s/content-e;
+    grid-column: content-s/content-e;
+
+    &__form {
+        display: grid;
+        grid-template-rows: [name-s] 6.4rem [name-e credit-card-s] 6.4rem [credit-card-e  exp-ccv-s] 6.4rem [exp-ccv-e] minmax(2rem, 8.1rem) [line-s] .2rem [line-e buttons-s] 3.8rem [buttons-e];
+        grid-template-columns: [back-s] 13.7rem [back-e space-s] 4rem [space-e payment-complete-s] 1fr [payment-complete-e] 1fr;
+        grid-row-gap: 1.5rem;
+    }
+}
+
+.payment-form {
+    &__name {
+        grid-row: name-s/name-e;
+    }
+
+    &__credit-card {
+        grid-row: credit-card-s/credit-card-e;
+    }
+
+    &__expiration,
+    &__ccv {
+        grid-row: exp-ccv-s/exp-ccv-e;
+        grid-column: back-s;
+        input {
+            width: 20rem;
+        }
+    }
+
+    &__ccv {
+        transform: translateX(22.6rem);
+    }
+
+    &__line {
+        grid-row: line-s/line-e;
+        grid-column: 1/-1;
+
+        border-top: .1rem solid $color-gray-five;
+    }
+
+    &__payment-complete {
+        grid-row: buttons-s/buttons-e;
+        grid-column: payment-complete-s/payment-complete-e;
+
+        margin-top: 2.4rem;
+    }
+
+    &__back {
+        grid-row: buttons-s/buttons-e;
+        grid-column: back-s/back-e;
+
+        margin-top: 2.4rem;
+    }
+
+    &__order-summary {
+        grid-row: name-s;
+        grid-column: payment-complete-e/-1;
+        justify-self: end;
+    }
+}
