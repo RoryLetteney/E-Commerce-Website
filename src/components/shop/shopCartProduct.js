@@ -13,7 +13,7 @@ class ShopCartProduct extends Component {
                <div className="shop-cart-product__title">{title}</div>
                <Quantity className="shop-cart-product__quantity" quantity={quantity}/>
                <a className="shop-cart-product__remove">Remove</a>
-               <GreenPriceTag className="shop-cart-product__price" title={price}/>
+               <GreenPriceTag className="shop-cart-product__price" title={price * quantity}/>
            </div>
         )
     }
