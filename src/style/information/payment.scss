@@ -58,4 +58,12 @@
         grid-column: payment-complete-e/-1;
         justify-self: end;
     }
+
+    &__shipping-info {
+        grid-row: exp-ccv-s;
+        grid-column: payment-complete-e/-1;
+        justify-self: end;
+    }
 }
+
+.small-text { font-size: 1.4rem; }

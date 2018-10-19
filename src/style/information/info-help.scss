@@ -41,8 +41,35 @@
     grid-row-gap: .5rem;
     
     width: 24rem;
+    height: 15rem;
 
     .info-title__value {
         justify-self: end;
+    }
+}
+
+.shipping-info {    
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3rem 2.4rem 2.4rem 4.6rem;
+    grid-row-gap: .5rem;
+    
+    width: 24rem;
+    height: 15rem;
+
+    & > * {
+        grid-column: 1/-1;
+    }
+
+    &__title {
+
+    }
+
+    &__name {
+
+    }
+
+    &__address {
+
     }
 }
