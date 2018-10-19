@@ -1,0 +1,26 @@
+.underlined-title {
+    font-size: 1.4rem;
+    font-weight: 600;
+    border-bottom: .1rem solid $color-gray-five;
+}
+
+.info-title {
+
+    &__title {
+        font-size: 1.4rem;
+    }
+
+    &__value {
+        color: $color-green-one;
+        font-weight: 600;
+        font-size: 1.6rem;
+    }
+}
+
+.info-title-green {
+    &__title {
+        font-weight: 600;
+        color: $color-green-one;
+        font-size: 1.6rem;
+    }
+}
