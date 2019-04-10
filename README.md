@@ -1,1 +1,3 @@
-> An e-commerce front-end built using react-redux-router.
+# E-commerce UI
+
+This UI, served up on Heroku, was designed to showcase frontend functionality for an e-commerce website. Built with ReactJS and SCSS it allows a user to create an account and log in. Once logged in the user is immediately shown their purchase history. The user then has the option to move to the product catalog to view all of the products that the company offers, as well as filter down the list based upon search terms and predefined filters. Users can then add items to and manipulate items in their cart, such as increasing or lowering quantity or removing items entirely. Once they have their items in their cart they are taken to a checkout screen and a payment information form. Lastly, the users also have the option to update their account information such as name, address, and password.
